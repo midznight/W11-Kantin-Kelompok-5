@@ -219,6 +219,7 @@ footer {
 .link-col a:hover {
   color: #fff;
 }
+
 main {
   min-height: 520px;
 }
@@ -501,4 +502,275 @@ h1 {
     grid-template-columns: 1fr;
     gap: 24px;
   }
+}
+
+/* ========================
+   HALAMAN KONTAK & BANTUAN 
+   ======================== */
+
+/* Bagian utama */
+.kb-main {
+    padding: 50px 20px;
+}
+
+.kb-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Judul halaman */
+.kb-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.kb-heading h1 {
+    font-size: 36px;
+    color: #49352F;
+    margin-bottom: 12px;
+}
+
+.kb-heading p {
+    font-size: 15px;
+    color: #6F5B54;
+    line-height: 1.7;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Tata letak konten */
+.kb-content {
+    display: grid;
+    grid-template-columns: 0.55fr 1.25fr;
+    gap: 25px;
+    align-items: start;
+}
+
+/* Daftar informasi kontak */
+.kb-contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.kb-contact-card {
+    background-color: #FFFFFF;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.kb-icon {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    background-color: #F2E5DF;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+}
+
+.kb-contact-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #49352F;
+    margin-bottom: 6px;
+}
+
+.kb-contact-card p {
+    font-size: 14px;
+    color: #6F5B54;
+    line-height: 1.5;
+}
+
+.kb-contact-card a {
+    color: #8B5E4B;
+    text-decoration: none;
+}
+
+.kb-contact-card a:hover {
+    text-decoration: underline;
+}
+
+/* Kotak formulir */
+.kb-form-container {
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+}
+
+.kb-form-container h2 {
+    font-size: 23px;
+    color: #49352F;
+    margin-bottom: 10px;
+}
+
+.kb-info {
+    font-size: 14px;
+    color: #806D65;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* Notifikasi formulir */
+.kb-alert {
+    background-color: #F8EEE9;
+    color: #765344;
+    padding: 12px 15px;
+    border-radius: 8px;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+/* Baris input */
+.kb-form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.kb-form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+.kb-form-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #49352F;
+    margin-bottom: 8px;
+}
+
+.kb-form-group input,
+.kb-form-group select,
+.kb-form-group textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #DDCCC4;
+    border-radius: 8px;
+    background-color: #FFFCFA;
+    color: #49352F;
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.kb-form-group input:focus,
+.kb-form-group select:focus,
+.kb-form-group textarea:focus {
+    border-color: #A8755F;
+    box-shadow: 0 0 0 2px rgba(168, 117, 95, 0.12);
+}
+
+.kb-form-group textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Tombol kirim */
+.kb-submit {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    background-color: #8B5E4B;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.kb-submit:hover {
+    background-color: #704635;
+}
+
+/* =========================================
+   HALAMAN HASIL PROSES FORMULIR PHP
+   ========================================= */
+
+.kb-result {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+    box-sizing: border-box;
+}
+
+.kb-result-card {
+    width: 100%;
+    max-width: 500px;
+    padding: 35px;
+    background-color: #FFFFFF;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+}
+
+.kb-result-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.kb-result-success {
+    background-color: #E3F2E5;
+    color: #38834A;
+}
+
+.kb-result-failed {
+    background-color: #FBE5E2;
+    color: #B94A48;
+}
+
+.kb-result-card h2 {
+    color: #49352F;
+    margin-bottom: 15px;
+}
+
+.kb-result-card p {
+    color: #6F5B54;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.kb-result-note {
+    font-size: 13px;
+}
+
+.kb-error-list {
+    text-align: left;
+    color: #B94A48;
+    margin: 15px 0 20px 20px;
+    line-height: 1.7;
+}
+
+.kb-back-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 20px;
+    background-color: #8B5E4B;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.kb-back-button:hover {
+    background-color: #704635;
 }
