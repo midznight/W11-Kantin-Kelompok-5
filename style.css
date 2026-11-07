@@ -22,27 +22,29 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: #ffffff;
-    padding: 10px 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1.2rem 4rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
 .logo a {
     color: #2f7d6f;
-    text-decoration: none;
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 1.2rem;
+    font-weight: 800;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 24px;
+    gap: 1.8rem;
 }
 
 .nav-links a {
     color: #444;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 0.85rem;
     font-weight: 600;
     transition: color 0.3s;
 }
@@ -96,7 +98,7 @@ body {
   border: none;
   border-radius: 6px;
   font-weight: 600;
-  fonte-size: 0.9rem;
+  font-size: 0.9rem;
   cursor: pointer;
   transition: background-color 0.3s;
 }
@@ -109,4 +111,99 @@ body {
     padding: 3rem 1.5rem;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #2b7a62;
+    margin-bottom: 1rem;
+}
+
+.section desc {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+.placeholder-box {
+  background-color: #fffafa;
+  border-radius: 8px;
+  padding: 3.5rem 2rem;
+  text-align: center;
+}
+
+.placeholder-box .icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.placeholder-box h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #2b7a62;
+}
+
+.placeholder-box p {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Footer */
+footer {
+    background-color: #2f7d6f;
+    color: #fff;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+.footer-container h3 {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.main-col p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #ddd;
+  max-width: 400px;
+  margin-bottom: 1.2rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.social-icons a {
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.link-col ul {
+  list-style: none;
+}
+
+.link-col li {
+  margin-bottom: 0.5rem;
+}
+
+.link-col a {
+  color: #c0d3cd;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.link-col a:hover {
+  color: #fff;
 }
