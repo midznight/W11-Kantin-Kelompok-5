@@ -40,13 +40,16 @@ body {
 }
 
 .nav-links a {
-    color: #2f7d6f;
+    color: #444;
     text-decoration: none;
     font-size: 20px;
+    font-weight: 600;
     transition: color 0.3s;
 }
 
-nav-links a.active {
+.nav-links a:hover,
+.nav-links a.active {
+    color: #2f7d6f;
     border-bottom: 2px solid #2f7d6f;
     padding-bottom: 4px;
 }
@@ -100,4 +103,10 @@ nav-links a.active {
 
 .btn-primary:hover {
   background-color: #2b7a62;
+}
+
+.main-container {
+    padding: 3rem 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
