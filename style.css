@@ -9,6 +9,18 @@ html {
     scroll-padding-top: 80px;
 }
 
+:root {
+  --green: #319b88;
+  --green-dark: #58736e;
+  --green-deep: #45645f;
+  --peach: #ead8d1;
+  --paper: #f5f4f2;
+  --white: #fff;
+  --ink: #365d58;
+  --muted: #68716e;
+  --line: #c8d8d3;
+}
+
 body {
         font-family: Arial, sans-serif;
         margin: 0;
@@ -206,4 +218,287 @@ footer {
 
 .link-col a:hover {
   color: #fff;
+}
+main {
+  min-height: 520px;
+}
+
+.page {
+  background: var(--peach);
+  padding: 42px max(5%, calc((100% - 1120px) / 2)) 54px;
+}
+
+.container {
+  max-width: 1120px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 34px;
+  line-height: 1.15;
+  color: var(--green-dark);
+  margin-bottom: 10px;
+}
+
+.intro {
+  font-size: 13px;
+  max-width: 720px;
+  color: #4d5e59;
+  margin-bottom: 28px;
+}
+
+.guide-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.guide-card,
+.step-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #294a4410;
+}
+
+.guide-card {
+  padding: 22px;
+}
+
+.guide-card h2 {
+  font-size: 17px;
+  color: var(--green-dark);
+  margin-bottom: 14px;
+}
+
+.check-list {
+  list-style: none;
+  display: grid;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.check-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 13px;
+  color: #4c5b57;
+}
+
+.check {
+  width: 19px;
+  height: 19px;
+  flex: 0 0 19px;
+  border-radius: 5px;
+  background: var(--green);
+  color: white;
+  display: grid;
+  place-items: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--green-dark);
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px 18px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--green);
+}
+
+.video-placeholder {
+  height: 330px;
+  background: #f5ebe7;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 24px 0 48px;
+  color: var(--green-dark);
+  border: 1px solid #eee0db;
+}
+
+.video-icon {
+  font-size: 34px;
+  color: #84948f;
+  margin-bottom: 8px;
+}
+
+.video-placeholder strong {
+  font-size: 15px;
+}
+
+.video-placeholder p {
+  font-size: 12px;
+  color: #65716d;
+  margin-top: 5px;
+}
+
+.steps-wrap {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.steps-wrap h2 {
+  font-size: 22px;
+  color: var(--green-dark);
+  margin-bottom: 16px;
+}
+
+.steps {
+  display: grid;
+  gap: 10px;
+}
+
+.step-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 13px 16px;
+}
+
+.step-number {
+  width: 30px;
+  height: 30px;
+  flex: 0 0 30px;
+  background: var(--green);
+  border-radius: 50%;
+  color: white;
+  display: grid;
+  place-items: center;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.step-card h3 {
+  font-size: 14px;
+  color: #344b47;
+  margin-bottom: 3px;
+}
+
+.step-card p {
+  font-size: 11px;
+  color: #68736f;
+}
+
+.note {
+  text-align: center;
+  font-size: 11px;
+  color: #58645f;
+  margin-top: 16px;
+}
+
+.footer {
+  background: var(--green-dark);
+  color: #f4f7f5;
+  padding: 32px max(5%, calc((100% - 1120px) / 2)) 22px;
+}
+
+.footer-inner {
+  max-width: 1120px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 60px;
+}
+
+.footer h2 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer p,
+.footer a {
+  font-size: 12px;
+  color: #e0e9e6;
+}
+
+.footer-links {
+  display: grid;
+  gap: 5px;
+}
+
+.socials {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.socials a {
+  width: 28px;
+  height: 28px;
+  border: 1px solid #b6c9c3;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 11px;
+}
+
+.footer-bottom {
+  max-width: 1120px;
+  margin: 24px auto 0;
+  border-top: 1px solid #829a94;
+  padding-top: 14px;
+  font-size: 10px;
+  color: #d7e1dd;
+}
+
+@media (max-width: 700px) {
+  .navbar {
+    height: auto;
+    min-height: 60px;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 15px 5%;
+    gap: 10px;
+  }
+
+  .nav-links {
+    width: 100%;
+    gap: 16px;
+    overflow-x: auto;
+    padding-bottom: 4px;
+    font-size: 11px;
+  }
+
+  .page {
+    padding: 30px 5% 42px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .intro {
+    font-size: 12px;
+  }
+
+  .guide-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .video-placeholder {
+    height: 220px;
+    margin: 20px 0 35px;
+  }
+
+  .steps-wrap h2 {
+    font-size: 20px;
+  }
+
+  .footer-inner {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
 }
