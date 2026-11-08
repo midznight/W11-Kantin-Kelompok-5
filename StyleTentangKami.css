@@ -1,0 +1,157 @@
+/* ========================================================
+   KHUSUS UNTUK HALAMAN TENTANG KAMI
+   ======================================================== */
+
+/* Jarak antar section */
+.section-margin {
+    margin-bottom: 40px;
+}
+
+/* Teks Visi Misi */
+.visi-misi-text {
+    font-size: 13px;
+    color: #4c5b57;
+    line-height: 1.6;
+}
+
+/* Judul Section (Keunggulan & Lokasi) */
+.section-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Layout Grid 3 Kolom Sejajar (Keunggulan) */
+.keunggulan-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Kartu Keunggulan */
+.keunggulan-card {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.keunggulan-card h3 {
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.keunggulan-card p {
+    font-size: 12px;
+    margin-top: 6px;
+    line-height: 1.5;
+}
+
+/* Layout Grid Lokasi (2 Kolom Tidak Simetris) */
+.lokasi-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 24px;
+    align-items: stretch;
+}
+
+/* Box Placeholder Peta (Sisi Kiri) */
+.peta-box {
+    margin: 0;
+    height: 100%;
+    min-height: 250px;
+    background-color: #eee4e0;
+    border-radius: 8px;
+}
+
+.pin-icon {
+    width: 24px;
+    height: 24px;
+    background: #c5b4ad;
+    border-radius: 50%;
+    margin: 0 auto 8px;
+    display: grid;
+    place-items: center;
+    color: white;
+    font-size: 12px;
+}
+
+.peta-text {
+    font-size: 11px;
+    color: #887b76;
+}
+
+/* Box Deskripsi & Baris Ilustrasi (Sisi Kanan) */
+.ilustrasi-box {
+    background: transparent;
+    padding: 10px;
+}
+
+.ilustrasi-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #344b47;
+    margin-bottom: 8px;
+}
+
+.ilustrasi-desc {
+    font-size: 11px;
+    color: #58645f;
+    margin-bottom: 16px;
+    line-height: 1.4;
+}
+
+.ilustrasi-item {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.ilustrasi-img {
+    width: 70px;
+    height: 50px;
+    background-color: #dcd6d1;
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+
+.ilustrasi-item h4 {
+    font-size: 12px;
+    font-weight: 700;
+    color: #344b47;
+    margin: 0;
+}
+
+.ilustrasi-item p {
+    font-size: 11px;
+    color: #68736f;
+    margin-top: 2px;
+}
+
+.footer-text-max {
+    max-width: 360px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+/* Responsif untuk layar HP */
+@media (max-width: 700px) {
+    .keunggulan-grid,
+    .lokasi-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Tambahan style untuk lokasi di tab tentang kami */
+a.peta-box {
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+a.peta-box:hover {
+  background-color: #e6dad5;
+}
