@@ -937,15 +937,17 @@ h1 {
         grid-template-columns: 1fr;
     }
 }
+
+/* Style css Menu dan Stan*/
 :root {
   --font-main: Arial, sans-serif;
  
-  --c-bg:        #EAD9D2;   /* latar halaman */
-  --c-surface:   #ffffff;   /* kartu menu, tombol panah */
-  --c-soft:      #f3e8e3;   /* latar foto / placeholder */
-  --c-primary:   #2f7d6f;   /* hijau utama */
-  --c-primary-2: #2b7a62;   /* hijau judul & harga */
-  --c-heading:   #4a7065;   /* judul halaman & subjudul */
+  --c-bg:        #EAD9D2;   
+  --c-surface:   #ffffff;   
+  --c-soft:      #f3e8e3;   
+  --c-primary:   #2f7d6f;   
+  --c-primary-2: #2b7a62;   
+  --c-heading:   #4a7065;   
   --c-text:      #333;
   --c-muted:     #777;
   --c-line:      #d9cbc4;
@@ -1039,7 +1041,7 @@ h1 {
 }
 .stan-dots label.active { width: 22px; border-radius: 4px; background: var(--c-primary); }
  
-/* --- Foto + placeholder (tampil otomatis kalau file foto tidak ada) --- */
+
 .stan-photo,
 .menu-thumb { position: relative; display: flex; align-items: center; justify-content: center; }
 .stan-photo { height: 100%; }
@@ -1071,7 +1073,6 @@ h1 {
 .stan-hours td { padding: 5px 0; }
 .stan-hours td:last-child { text-align: right; }
  
-/* --- Daftar menu: lebih dari 5 otomatis turun ke baris berikutnya --- */
 .menu-category { font-size: 17px; color: var(--c-heading); margin: 22px 0 13px; }
  
 .menu-grid {
