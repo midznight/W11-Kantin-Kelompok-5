@@ -1110,3 +1110,13 @@ h1 {
   color: #319b88;
   text-decoration: underline;
 }
+
+/* Tambahan style untuk lokasi di tab tentang kami */
+a.peta-box {
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+a.peta-box:hover {
+  background-color: #e6dad5;
+}
