@@ -1097,3 +1097,16 @@ h1 {
   .stan-title { font-size: 32px; }
   .menu-grid  { grid-template-columns: repeat(2, 1fr); }
 }
+
+/*update fungsi tombol kembali di menu Transaksi juga Ulasan*/
+
+.note a {
+  color: #58736e;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.note a:hover {
+  color: #319b88;
+  text-decoration: underline;
+}
