@@ -976,7 +976,7 @@ h1 {
   margin-bottom: 29px;
 }
  
-
+/* --- Pemilih kantin: radio disembunyikan, panah/titik = <label> --- */
 .stan-radio { position: absolute; opacity: 0; pointer-events: none; }
 .stan-panel { display: none; }
  
@@ -1039,7 +1039,7 @@ h1 {
 }
 .stan-dots label.active { width: 22px; border-radius: 4px; background: var(--c-primary); }
  
-
+/* --- Foto + placeholder (tampil otomatis kalau file foto tidak ada) --- */
 .stan-photo,
 .menu-thumb { position: relative; display: flex; align-items: center; justify-content: center; }
 .stan-photo { height: 100%; }
@@ -1071,6 +1071,7 @@ h1 {
 .stan-hours td { padding: 5px 0; }
 .stan-hours td:last-child { text-align: right; }
  
+/* --- Daftar menu: lebih dari 5 otomatis turun ke baris berikutnya --- */
 .menu-category { font-size: 17px; color: var(--c-heading); margin: 22px 0 13px; }
  
 .menu-grid {
