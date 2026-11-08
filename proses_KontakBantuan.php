@@ -1,4 +1,3 @@
-
 <?php
 // Memeriksa apakah halaman menerima data dari formulir
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
