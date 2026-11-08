@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kantin POLIJE - Tentang Kami</title>
+    <title>Tentang Kami - KANTIN POLIJE</title>
+    <!-- Menghubungkan file CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- Header Navigation -->
     <header class="navbar">
         <div class="logo">
-               <a href="Home.html">Kantin Polije</a>
+                <a href="Home.html">Kantin Polije</a>
         </div>
         <ul class="nav-links">
             <li><a href="Home.html">Home</a></li>
@@ -20,78 +23,99 @@
         </ul>
     </header>
 
-    <section class="hero">
-        <div class="hero-content">
+    <!-- Main Content Page -->
+    <main class="page">
+        <div class="container">
+            
+            <!-- Header Section (Judul & Deskripsi) -->
             <h1>Tentang Kami</h1>
             <h2>Kantin Polije</h2>
-            <p>KANTIN Polije adalah konsep situs informasi kantin untuk segala kebutuhan bagi mahasiswa, dosen, dan staf. Temukan menu, harga, jam operasional serta panduan sebelum berkunjung. Pembelian dilakukan langsung di stan, bukan melalui situs ini. Konsep ini bukan layanan transaksi digital resmi Polije.</p>
-        </div>
-    </section>
+            <p class="intro">
+            adalah konsep situs informasi kantin untuk simulasi/demo bagi mahasiswa, dosen, dan staf. Temukan menu, harga, jam operasional, serta panduan sebelum berkunjung. Pembelian dilakukan langsung di tempat, bukan melalui situs ini. Konsep ini bukan bagian resmi dari kampus Polije.
+            </p>
 
-    <!-- Section Visi Misi -->
-    <section class="visi-misi-container">
-        <div class="card-vm">
-            <h3>Visi</h3>
-            <p>Membuat informasi menu dan jam operasional kantin mudah diakses sehingga pengunjung dapat mengantisipasi sebelum datang.</p>
-        </div>
-        <div class="card-vm">
-            <h3>Misi</h3>
-            <p>Mengumpulkan informasi menu dan jam operasional dari pengelola stan dan pembelian langsung di tempat, serta menyediakan kanal kontak yang jelas.</p>
-        </div>
-    </section>
-
-    <!-- Section Keunggulan -->
-    <section class="keunggulan-section">
-        <h2>Keunggulan</h2>
-        <div class="keunggulan-container">
-            <div class="card-keunggulan">
-                <div class="badge-number">1</div>
-                <h3>Menu mudah dibandingkan</h3>
-                <p>Warna mempermudah pengunjung untuk lebih mudah membandingkan opsi pilihan.</p>
-            </div>
-            <div class="card-keunggulan">
-                <div class="badge-number">2</div>
-                <h3>Panduan sebelum datang</h3>
-                <p>Petunjuk bagi pembeli baru yang belum terbiasa menyampaikan ulasan setelah melakukan pesanan.</p>
-            </div>
-            <div class="card-keunggulan">
-                <div class="badge-number">3</div>
-                <h3>Informasi dalam satu tempat</h3>
-                <p>Temukan jam operasional, bantuan, dan informasi tentang kantin dari satu produk—bukan banyak sumber.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section Lokasi -->
-    <section class="lokasi-section">
-        <h2>Lokasi</h2>
-        <div class="lokasi-container">
-            <div class="map-box">
-                <div class="map-pin"></div>
-                <p>Peta lokasi kantin terdaftar</p>
-            </div>
-            <div class="ilustrasi-box">
-                <h3>Ilustrasi area kantin</h3>
-                <p class="desc">Gambar ilustrasi berikut hanya ilustrasi. Peta sebenarnya akan ditambahkan setelah lokasi dikonfirmasi.</p>
-                
-                <div class="ilustrasi-item">
-                    <div class="thumb-gray"></div>
-                    <div class="text">
-                        <h4>Area Stan</h4>
-                        <p>Fasilitas area untuk melihat menu dan membeli langsung di stan.</p>
-                    </div>
+            <!-- Grid Visi & Misi -->
+            <div class="guide-grid section-margin">
+                <div class="guide-card">
+                    <h2>Visi</h2>
+                    <p class="visi-misi-text">
+                        Membuat informasi menu dan operasional kantin mudah ditemukan agar pengunjung dapat merencanakan sebelum datang.
+                    </p>
                 </div>
-
-                <div class="ilustrasi-item">
-                    <div class="thumb-gray"></div>
-                    <div class="text">
-                        <h4>Tempat Duduk</h4>
-                        <p>Fasilitas area untuk menikmati makanan setelah membeli di stan.</p>
-                    </div>
+                <div class="guide-card">
+                    <h2>Misi</h2>
+                    <p class="visi-misi-text">
+                        Mengumpulkan informasi menu dan operasional, menampilkan simulasi pembelian langsung di tempat, serta menyediakan kanal kontak yang jelas.
+                    </p>
                 </div>
             </div>
+
+           <!-- Bagian Keunggulan -->
+<div class="steps-wrap section-margin">
+    <!-- Cukup tambahkan class text-center di sini -->
+    <h2 class="section-title text-center">Keunggulan</h2>
+    
+    <div class="keunggulan-grid">
+        <div class="step-card keunggulan-card">
+            <div class="step-number">1</div>
+            <h3>Menu mudah dibandingkan</h3>
+            <p>Nama menu dan harga disajikan transparan agar kamu lebih mudah memilih opsi pilihan.</p>
         </div>
-    </section>
+
+        <div class="step-card keunggulan-card">
+            <div class="step-number">2</div>
+            <h3>Panduan sebelum datang</h3>
+            <p>Petunjuk langkah pembelian langsung di area kantin serta menyampaiakan ulasan setelah mengonsumsi.</p>
+        </div>
+
+        <div class="step-card keunggulan-card">
+            <div class="step-number">3</div>
+            <h3>Informasi dalam satu tempat</h3>
+            <p>Temukan jam operasional, bantuan, dan informasi tentang kantin tanpa berpindah-pindah sumber.</p>
+        </div>
+    </div>
+</div>
+
+            <!-- Bagian Lokasi & Ilustrasi Area Kantin -->
+            <div class="section-margin">
+                <h2 class="section-title">Lokasi</h2>
+                <div class="lokasi-grid">
+                    
+                    <!-- Box Peta/Placeholder Lokasi -->
+                    <div class="video-placeholder peta-box">
+                        <div class="pin-icon">📍</div>
+                        <p class="peta-text">Peta lokasi atau rute rintisan</p>
+                    </div>
+
+                    <!-- Box Deskripsi Ilustrasi -->
+                    <div class="ilustrasi-box">
+                        <h3 class="ilustrasi-title">Ilustrasi area kantin</h3>
+                        <p class="ilustrasi-desc">Gambar dan peta berikut hanya ilustrasi. Peta sebenarnya akan ditambahkan setelah lokasi dikonfirmasi.</p>
+
+                        <div class="ilustrasi-item" style="margin-bottom: 12px;">
+                            <div class="ilustrasi-img"></div>
+                            <div>
+                                <h4>Area Stand</h4>
+                                <p>Tempat memesan dan melihat menu dan membeli langsung di tempat.</p>
+                            </div>
+                        </div>
+
+                        <div class="ilustrasi-item">
+                            <div class="ilustrasi-img"></div>
+                            <div>
+                                <h4>Tempat Duduk</h4>
+                                <p>Fasilitas area untuk menikmati makanan setelah membeli di stand.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
     <footer id="Tentang-Kami" class="footer">
         <div class="footer-container">
             <div class="footer-col main-col">
@@ -115,5 +139,6 @@
             </div>
         </div>
     </footer>
+
 </body>
 </html>
