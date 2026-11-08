@@ -5,6 +5,269 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kantin Polije</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* 2. Hero Section */
+.hero-section {
+  padding: 5rem 4rem;
+  background: linear-gradient(to right, rgba(245, 235, 230, 0.95), rgba(245, 235, 230, 0.5)), 
+              url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  max-width: 550px;
+}
+
+.sub-title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #666;
+  letter-spacing: 1px;
+}
+
+.hero-content h1 {
+  font-size: 2.8rem;
+  color: #2b7a62;
+  margin: 0.5rem 0 1rem;
+}
+
+.hero-content p {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1.8rem;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #4a7065;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #2b7a62;
+}
+
+/* Container Utama */
+.main-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+/* Base Card & Section Style */
+h2 {
+  color: #2b7a62;
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-desc {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 1.8rem;
+  line-height: 1.5;
+}
+
+.placeholder-box {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 4rem 3rem;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.placeholder-box .icon {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.placeholder-box h3 {
+  color: #2b7a62;
+  margin-bottom: 0.3rem;
+  font-size: 1.1rem;
+}
+
+.placeholder-box p {
+  font-size: 0.8rem;
+  color: #777;
+}
+
+/* 3. Suasana Kantin */
+.card-section {
+  background-color: #efe5e0;
+  border-radius: 2rem;
+  padding: 1rem;
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+/* 4. Menu & Stan */
+.stan-section {
+  margin-bottom: 3rem;
+}
+
+.stan-card {
+  background-color: #efe5e0;
+  border-radius: 24px;
+  padding: 1rem;
+}
+
+.badge {
+  background-color: #ffffff;
+  color: #2b7a62;
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+/* 5. Panduan Kantin */
+.panduan-section {
+  margin-bottom: 4rem;
+}
+
+.panduan-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.panduan-card {
+  background-color: #efe5e0;
+  border-radius: 12px;
+  padding: 1.8rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.panduan-card h3 {
+  color: #2b7a62;
+  font-size: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.step-list {
+  list-style: none;
+  margin-bottom: 1.5rem;
+  flex: 1;
+}
+
+.step-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 0.85rem;
+  color: #444;
+  margin-bottom: 0.8rem;
+}
+
+.step-list li span {
+  background-color: #4a7065;
+  color: #fff;
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.btn-secondary {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background-color: #4a7065;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  align-self: flex-start;
+}
+
+/* 6. Kontak & Bantuan */
+.kontak-section {
+  margin-bottom: 2rem;
+}
+
+.kontak-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1.5rem;
+}
+
+.kontak-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.info-box {
+  background-color: #efe5e0;
+  padding: 1.2rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.info-box p {
+  font-size: 0.8rem;
+  color: #555;
+}
+
+.kontak-form {
+  background-color: #efe5e0;
+  padding: 1.8rem;
+  border-radius: 12px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 0.3rem;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #d4c5bd;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  background-color: #fff;
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #2b7a62;
+}
+    </style>
 </head>
 <body>
     <header class="navbar">
@@ -39,6 +302,106 @@
                 <p>Video suasana kantin akan segera hadir.</p>
             </div>
         </section>
+
+        <section id="menu-stan" class="stan-section">
+            <div class="stan-info">
+                <h2>Menu & Stan</h2>
+                <p>Temukan berbagai menu makanan dan minuman yang tersedia di stan-stan kantin kampus POLIJE.</p>
+            </div>
+
+            <div class="stan-card-container">
+                <div class="stan-card">
+                    <span class="badge">Kantin 1</span>
+                    <div class="placeholder-box card-placeholder">
+                        <div class="icon"><a href="MenuStan.html">🖼️</a></div>
+                        <p>Gambar stan akan segera hadir.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Panduan Kantin (#panduan) -->
+    <section id="panduan" class="panduan-section">
+      <h2>Panduan Kantin</h2>
+      <p class="section-desc">Pembelian dilakukan langsung di stan kantin. Kenali alur transaksi dan panduan menyampaikan ulasan yang jelas, sopan, dan bermanfaat.</p>
+      
+      <div class="panduan-grid">
+        <!-- Card Transaksi -->
+        <div class="panduan-card">
+          <h3>Transaksi</h3>
+          <ol class="step-list">
+            <li><span>1</span> Pilih menu dan sampaikan ke stan</li>
+            <li><span>2</span> Konfirmasi total dan lakukan pembayaran</li>
+            <li><span>3</span> Layanan siap menunggu pesanan disajikan</li>
+          </ol>
+          <a href="transaksi.html" class="btn-secondary">Panduan Transaksi &rarr;</a>
+        </div>
+
+        <!-- Card Ulasan -->
+        <div class="panduan-card">
+          <h3>Ulasan</h3>
+          <ol class="step-list">
+            <li><span>1</span> Selesaikan transaksi dan nikmati produk</li>
+            <li><span>2</span> Catat nama rasa, kebersihan, dan pelayanan</li>
+            <li><span>3</span> Gunakan bahasa sopan dan berikan data sbg contoh</li>
+          </ol>
+          <a href="ulasan.html" class="btn-secondary">Panduan Ulasan &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Kontak & Bantuan (#kontak) -->
+    <section id="kontak" class="kontak-section">
+      <h2>Kontak & Bantuan</h2>
+      <p class="section-desc">Lihat catatan informasi kontak kantin kampus dan formulir pertanyaan untuk mahasiswa, dosen, dan staf. Halaman ini merupakan simulasi lokasi layanan kontak resmi.</p>
+
+      <div class="kontak-grid">
+        <!-- Sisi Kiri: Info Box -->
+        <div class="kontak-info-list">
+          <div class="info-box">
+            <span class="info-icon">💬</span>
+            <p>Nomor whatsapp belum tersedia.</p>
+          </div>
+          <div class="info-box">
+            <span class="info-icon">✉️</span>
+            <p>Kontak email belum tersedia.</p>
+          </div>
+          <div class="info-box">
+            <span class="info-icon">📍</span>
+            <p>Lihat informasi lokasi di halaman Tentang Kami.</p>
+          </div>
+        </div>
+
+        <!-- Sisi Kanan: Form Kontak -->
+        <form class="kontak-form" onsubmit="event.preventDefault();">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Nama *</label>
+              <input type="text" placeholder="Masukkan nama Anda">
+            </div>
+            <div class="form-group">
+              <label>Email *</label>
+              <input type="email" placeholder="Masukkan alamat email">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>No. HP *</label>
+              <input type="text" placeholder="Masukkan nomor HP">
+            </div>
+            <div class="form-group">
+              <label>Subjek *</label>
+              <input type="text" placeholder="Tuliskan subjek pesan">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Pesan Anda *</label>
+            <textarea rows="4" placeholder="Tulis pesan Anda di sini"></textarea>
+          </div>
+          <button type="submit" class="btn-primary">Kirim &rarr;</button>
+        </form>
+      </div>
+    </section>
     </main>
 
     <footer id="Tentang-Kami" class="footer">
